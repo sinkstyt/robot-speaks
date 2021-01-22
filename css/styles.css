@@ -1,0 +1,15 @@
+body {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.instruction {
+  font-style: italic;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  text-align: right;
+}
+.jumbotron h1 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 48pt;
+  font-weight: 900;
+  text-align: justify;
+}
