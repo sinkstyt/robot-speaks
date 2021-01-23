@@ -1,5 +1,8 @@
 // Business Logic ----------->
 const robogerSpeaks = str => {
+  if (str.match(/\D/) !== null) {
+    return "error: Mr. Roboger can respond to only numbers.";
+  }
   let responseArr = [];
   let inputNum = parseInt(str);
   if (inputNum < 0) {

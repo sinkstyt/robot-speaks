@@ -4,12 +4,17 @@ body {
 .instruction {
   font-style: italic;
   font-family: 'Roboto Slab', serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
   text-align: right;
+  margin-top: 22px;
 }
 .jumbotron h1 {
   font-family: 'Share Tech Mono', monospace;
   font-size: 48pt;
   font-weight: 900;
-  text-align: justify;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
 }
