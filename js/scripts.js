@@ -8,7 +8,14 @@ const robogerSpeaks = str => {
     return inputNum;
   } else if (0 < inputNum) {
     for (let i = 0; i <= inputNum; i++) {
-      responseArr.push(i);
+      i = i.toString();
+      if (i.includes("3")) {
+        responseArr.push("Won't you be my neighbor?");
+        i = parseInt(i);
+      } else {
+        i = parseInt(i);
+        responseArr.push(i);
+      }
     }
   }
   const output = responseArr.join(', ');
