@@ -12,6 +12,9 @@ const robogerSpeaks = str => {
       if (i.includes("3")) {
         responseArr.push("Won't you be my neighbor?");
         i = parseInt(i);
+      } else if (i.includes("2")) {
+        responseArr.push("Boop!");
+        i = parseInt(i);
       } else {
         i = parseInt(i);
         responseArr.push(i);
