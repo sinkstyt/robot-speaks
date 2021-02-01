@@ -1,6 +1,8 @@
 // Business Logic ----------->
 const robogerSpeaks = str => {
-  if (str.match(/\D/) !== null) {
+  if (str == '' || str == null || str == "undefined") {
+    return "error: please feed Mr. Roboger a number using Arabic numberals."
+  } else if (str.match(/\D/) !== null) {
     return "error: Mr. Roboger can respond to only numbers.";
   }
   let responseArr = [];
@@ -31,7 +33,6 @@ const robogerSpeaks = str => {
   return output;
 }
 
-// prepend to ul.output-list
 // UI Logic -------------->
 $(document).ready(function() {
   $("form#talk").submit(function(event) {
