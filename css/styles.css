@@ -1,5 +1,14 @@
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+  background-image: linear-gradient(rgba(69, 69, 69, 0.5), rgba(176, 176, 176, 0.16)), url("../img/metal-grating.jpg");
+  background-repeat: repeat-y;
+  overflow: scroll;
+  background-color: #040302;
+}
+form, .results {
+  color: rgba(255, 255, 255, 0.892);
+  text-shadow: 4px 4px 2px  #030303;
 }
 .instruction {
   font-style: italic;
@@ -9,12 +18,19 @@ body {
   text-align: right;
   margin-top: 22px;
 }
+.jumbotron {
+  border-radius: 15% 10%;
+}
 .jumbotron h1 {
   font-family: 'Share Tech Mono', monospace;
   font-size: 48pt;
   font-weight: 900;
   text-align: center;
 }
-ul {
+.results {
+  margin: 10%;
+}
+ul.output-list {
   list-style-type: none;
+  padding-left: 0;
 }
